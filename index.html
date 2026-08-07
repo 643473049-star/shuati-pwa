@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#3b6ef5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>刷题软件</title>
+</head>
+<body>
+  <div id="topbar">
+    <span class="title" id="pageTitle">录入题库</span>
+    <span class="right">
+      <button class="fbtn" id="fontMinus" title="缩小字体">A−</button>
+      <button class="fbtn" id="fontPlus" title="放大字体">A+</button>
+    </span>
+  </div>
+
+  <div id="view"></div>
+
+  <nav id="nav">
+    <button class="tab active" data-page="entry"><span class="ico">✏️</span>录入</button>
+    <button class="tab" data-page="bank"><span class="ico">📚</span>题库</button>
+    <button class="tab" data-page="practice"><span class="ico">🎯</span>刷题</button>
+    <button class="tab" data-page="wrong"><span class="ico">📒</span>错题</button>
+    <button class="tab" data-page="settings"><span class="ico">⚙️</span>设置</button>
+  </nav>
+
+  <script src="store.js"></script>
+  <script src="parser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
